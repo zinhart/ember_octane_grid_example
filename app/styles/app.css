@@ -1,0 +1,43 @@
+html,body
+{
+  width:100%;
+  height:100%;
+}
+#application-container
+{
+  display: grid;
+  width:100%;
+  height:100%;
+  grid-template-areas:
+  "header"
+  "content"
+  "footer";
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-columns: 1fr;
+
+}
+#header
+{
+  grid-area: header;
+  background-color: yellow;
+}
+#footer
+{
+  grid-area: footer;
+  background-color: blue;
+}
+#contact
+{
+  grid-area: content;
+  width:100%;
+  height:100%;
+  background-color: green;
+}
+#about
+{
+  grid-area: content;
+  width:100%;
+  height:100%;
+  background-color: red;
+
+}
